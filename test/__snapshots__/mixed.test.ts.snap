@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`params mixed 1`] = `
+[
+  "import { pick } from "../src/tool";
+const refType = {
+    "94": {
+        "keys": [
+            "b"
+        ]
+    },
+    "95": {
+        "array": 94
+    },
+    "102": {
+        "array": null
+    },
+    "104": {
+        "1": 106,
+        "keys": [
+            "value",
+            "children"
+        ]
+    },
+    "106": {
+        "array": 104
+    },
+    "117": {
+        "keys": [
+            "cadasd"
+        ]
+    },
+    "119": {
+        "3": 95,
+        "4": 102,
+        "5": 104,
+        "6": 117,
+        "keys": [
+            "str",
+            "int",
+            "bool",
+            "genericType",
+            "array",
+            "tree",
+            "adda"
+        ]
+    }
+};
+interface Parent {
+    a: string;
+}
+interface Children {
+    b: string;
+}
+// repeat
+interface Parent {
+    d: number;
+}
+// implements
+class Class implements Parent, Children {
+    a: string;
+    d: number;
+    b: string;
+}
+// generic
+interface C<T> {
+    c: T;
+}
+const genericType: C<Children> = {
+    c: {
+        b: ''
+    }
+};
+// Tree
+interface FNode {
+    value: number;
+    children: FNode[];
+}
+type ReturnValue<T> = T extends (...args: any) => infer X ? X : never;
+interface CalcType {
+    cadasd: ReturnValue<() => string>;
+}
+const result = {
+    str: "asdsa",
+    int: 123,
+    bool: true,
+    genericType,
+    array: [1, 2, 3],
+    tree: {
+        value: 0,
+        children: []
+    } as FNode,
+    adda: null as CalcType
+};
+pick(result, , );
+",
+]
+`;

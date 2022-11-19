@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`params object 1`] = `
+[
+  "import { pick } from "../src/tool";
+const refType = {
+    "99": {
+        "keys": [
+            "x",
+            "y"
+        ]
+    }
+};
+pick({ x: 3, y: 7 });
+",
+]
+`;

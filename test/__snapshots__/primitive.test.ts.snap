@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`params primitive 1`] = `
+[
+  "import { pick } from "../src/tool";
+const refType = {};
+// string
+pick("Hello, world");
+// number
+pick(42);
+// boolean 
+pick(false);
+",
+]
+`;

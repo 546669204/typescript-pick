@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`params array 1`] = `
+[
+  "import { pick } from "../src/tool";
+const refType = {
+    "105": {
+        "array": null
+    },
+    "111": {
+        "keys": [
+            "a"
+        ]
+    },
+    "112": {
+        "array": 111
+    }
+};
+pick([1, 2, 3]);
+interface Item {
+    a: number;
+}
+pick([{ a: 1 }] as Item[], , );
+",
+]
+`;
